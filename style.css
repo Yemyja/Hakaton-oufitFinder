@@ -1,0 +1,87 @@
+body {
+    background: linear-gradient(45deg, #ffbf00, #ff4040, #00bfff);
+    background-size: 600% 600%;
+    animation: gradientAnimation 20s ease infinite;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 2vh;
+  }
+  
+  h1 {
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #weatherInfo {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-right: 40%;
+    position: relative;
+  }
+ 
+  
+
+  #weatherInfo img {
+    position: absolute;
+    top: 0;
+    right: -400px; /* Ajusta el valor según el tamaño de la imagen */
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  #temperature,
+  #description {
+    color: #000;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+   
+  }
+  
+  button {
+    background-color: #ffbf00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    
+  }
+  
+  #outfitResult {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    margin-right: 40%;
+    
+  }
+  
+  #outfit {
+    color: #ff4040;
+    font-size: 2rem;
+    margin-top: 20px;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
